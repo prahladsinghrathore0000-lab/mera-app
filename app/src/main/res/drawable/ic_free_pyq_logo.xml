@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- === DROP SHADOW === -->
+    <path
+        android:fillColor="#33000000"
+        android:pathData="M20,112 C20,106 100,106 100,112 C100,117 20,117 20,112 Z" />
+
+    <!-- === OUTER VIBRANT ORANGE ROUNDED SHIELD / SQUIRCLE BADGE === -->
+    <!-- Dark Amber Border Layer -->
+    <path
+        android:fillColor="#C2410C"
+        android:pathData="
+            M24,6
+            L96,6
+            C106,6 114,14 114,24
+            L114,96
+            C114,106 106,114 96,114
+            L24,114
+            C14,114 6,106 6,96
+            L6,24
+            C6,14 14,6 24,6
+            Z
+        " />
+
+    <!-- Pure Rich Orange Main Canvas (#F97316 to #EA580C) -->
+    <path
+        android:fillColor="#F97316"
+        android:pathData="
+            M24,8
+            L96,8
+            C104.5,8 112,15.5 112,24
+            L112,96
+            C112,104.5 104.5,112 96,112
+            L24,112
+            C15.5,112 8,104.5 8,96
+            L8,24
+            C8,15.5 15.5,8 24,8
+            Z
+        " />
+
+    <!-- Top Radiant Orange Light Sheen (#FB923C) -->
+    <path
+        android:fillColor="#FB923C"
+        android:pathData="
+            M24,8
+            L96,8
+            C104.5,8 112,15.5 112,24
+            L112,54
+            C78,72 42,72 8,54
+            L8,24
+            C8,15.5 15.5,8 24,8
+            Z
+        " />
+
+    <!-- Inner Golden Yellow Highlight Ring -->
+    <path
+        android:strokeColor="#FED7AA"
+        android:strokeWidth="1.5"
+        android:pathData="
+            M24,11
+            L96,11
+            C103,11 109,17 109,24
+            L109,96
+            C109,103 103,109 96,109
+            L24,109
+            C17,109 11,103 11,96
+            L11,24
+            C11,17 17,11 24,11
+            Z
+        " />
+
+    <!-- Radial Sunburst Center Aura (Warm Golden-Orange Burst) -->
+    <path
+        android:fillColor="#FFEDD5"
+        android:pathData="M60,56 m-36,0 a36,36 0 1,0 72,0 a36,36 0 1,0 -72,0" />
+    <path
+        android:fillColor="#FED7AA"
+        android:pathData="M60,56 m-33,0 a33,33 0 1,0 66,0 a33,33 0 1,0 -66,0" />
+
+    <!-- Glowing Orange Sparkles -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M102,22 L103.5,26 L107.5,27.5 L103.5,29 L102,33 L100.5,29 L96.5,27.5 L100.5,26 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,22 L17.5,26 L21.5,27.5 L17.5,29 L16,33 L14.5,29 L10.5,27.5 L14.5,26 Z" />
+    <path
+        android:fillColor="#FFF7ED"
+        android:pathData="M18,94 L19,96.5 L21.5,97.5 L19,98.5 L18,101 L17,98.5 L14.5,97.5 L17,96.5 Z" />
+    <path
+        android:fillColor="#FFF7ED"
+        android:pathData="M102,94 L103,96.5 L105.5,97.5 L103,98.5 L102,101 L101,98.5 L98.5,97.5 L101,96.5 Z" />
+
+
+    <!-- === TOP BRILLIANT SUCCESS STAR === -->
+    <path
+        android:fillColor="#C2410C"
+        android:pathData="M60,13 L62.5,19.5 L69.5,19.5 L64,24 L66.2,30.5 L60,26.5 L53.8,30.5 L56,24 L50.5,19.5 L57.5,19.5 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,15 L62,20.5 L67.5,20.5 L63,24 L64.8,29.5 L60,26 L55.2,29.5 L57,24 L52.5,20.5 L58,20.5 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M60,17 L61.2,21 L65,21 L62,23.5 L63.2,27.5 L60,25 Z" />
+
+
+    <!-- === LAUREL WREATH OF VICTORY (GOLDEN ACCENTS) === -->
+    <!-- Left Leaves -->
+    <path
+        android:strokeColor="#7C2D12"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:pathData="M24,72 C20,54 26,36 37,24" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M23,70 C18,68 17,62 22,60 C25,64 25,67 23,70 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,56 C15,53 15,46 21,46 C23,50 22,53 20,56 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M22,42 C18,37 20,31 27,32 C27,36 25,39 22,42 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M29,29 C26,24 30,19 36,21 C35,25 32,28 29,29 Z" />
+
+    <!-- Right Leaves -->
+    <path
+        android:strokeColor="#7C2D12"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:pathData="M96,72 C100,54 94,36 83,24" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M97,70 C102,68 103,62 98,60 C95,64 95,67 97,70 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,56 C105,53 105,46 99,46 C97,50 98,53 100,56 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M98,42 C102,37 100,31 93,32 C93,36 95,39 98,42 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M91,29 C94,24 90,19 84,21 C85,25 88,28 91,29 Z" />
+
+
+    <!-- === CENTRAL MOTIF: OPEN EXAM PAPER / BOOK OF KNOWLEDGE === -->
+    <!-- Dark Book Base -->
+    <path
+        android:fillColor="#7C2D12"
+        android:pathData="
+            M24,68
+            C38,61 55,62 60,67
+            C65,62 82,61 96,68
+            L94.5,81
+            C81,75 65,75 60,79.5
+            C55,75 39,75 25.5,81
+            Z
+        " />
+
+    <!-- Book Spine Orange Layer -->
+    <path
+        android:fillColor="#EA580C"
+        android:pathData="
+            M25,66
+            C39,59 55,60 60,65
+            C65,60 81,59 95,66
+            L93.5,79
+            C80,73 65,73 60,77.5
+            C55,73 40,73 26.5,79
+            Z
+        " />
+
+    <!-- Left Book Page (Pristine White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M27,64
+            C39,57 54,58 59.5,63
+            L59.5,75
+            C54,70 39,69 27,75
+            Z
+        " />
+    <!-- Left Page Text/Question Lines -->
+    <path
+        android:strokeColor="#FB923C"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round"
+        android:pathData="
+            M32,63.5 C38,60.5 48,61.5 55,64
+            M32,67.5 C38,64.5 48,65.5 55,68
+            M32,71.5 C38,68.5 48,69.5 54,72
+        " />
+
+    <!-- Right Book Page (Pristine White) -->
+    <path
+        android:fillColor="#FFF7ED"
+        android:pathData="
+            M60.5,63
+            C66,58 81,57 93,64
+            L93,75
+            C81,69 66,70 60.5,75
+            Z
+        " />
+    <!-- Right Page Question Lines -->
+    <path
+        android:strokeColor="#FB923C"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round"
+        android:pathData="
+            M65,64 C72,61.5 82,60.5 88,63.5
+            M65,68 C72,65.5 82,64.5 88,67.5
+            M66,72 C72,69.5 82,68.5 87,71.5
+        " />
+
+    <!-- Center Fold Spine (Gold Marker) -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M59.2,62 L60.8,62 L60.8,76 L59.2,76 Z" />
+
+
+    <!-- === RISING FLAME OF VICTORY & WISDOM (विजय मशाल) === -->
+    <!-- Torch Chiseled Handle -->
+    <path
+        android:fillColor="#7C2D12"
+        android:pathData="M57.5,42 L62.5,42 L61.5,62 L58.5,62 Z" />
+    <path
+        android:fillColor="#C2410C"
+        android:pathData="M58,42 L62,42 L61.2,61 L58.8,61 Z" />
+    <path
+        android:fillColor="#FDE047"
+        android:pathData="M59.2,42 L60.8,42 L60.5,61 L59.5,61 Z" />
+
+    <!-- Torch Cup / Brasier -->
+    <path
+        android:fillColor="#7C2D12"
+        android:pathData="M53,33 L67,33 L63.5,42 L56.5,42 Z" />
+    <path
+        android:fillColor="#EA580C"
+        android:pathData="M54,34 L66,34 L63,41 L57,41 Z" />
+    <path
+        android:fillColor="#FDE047"
+        android:pathData="M54.5,34 L65.5,34 L64.8,36 L55.2,36 Z" />
+
+    <!-- Triple-Tone Dynamic Flame -->
+    <!-- Outer Crimson/Red-Orange Flame -->
+    <path
+        android:fillColor="#DC2626"
+        android:pathData="
+            M60,18
+            C66,24 70,29 67,35
+            C65,38 63,36.5 60,36.5
+            C57,36.5 55,38 53,35
+            C50,29 54,24 60,18
+            Z
+        " />
+    <!-- Vibrant Orange Core Flame -->
+    <path
+        android:fillColor="#F97316"
+        android:pathData="
+            M60,21
+            C64,26 67,30 65,35
+            C63.5,37 61.5,36 60,36
+            C58.5,36 56.5,37 55,35
+            C53,30 56,26 60,21
+            Z
+        " />
+    <!-- Radiant Yellow-White Center Spark -->
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="
+            M60,24
+            C62.5,28 64,31 63,34
+            C62,35.5 61,35 60,35
+            C59,35 58,35.5 57,34
+            C56,31 57.5,28 60,24
+            Z
+        " />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,27 C61,29 61.5,31 61,33 C60.5,33.8 60,33.5 60,33.5 C60,33.5 59.5,33.8 59,33 C58.5,31 59,29 60,27 Z" />
+
+
+    <!-- === BOTTOM EMBOSSED BANNER: "PYQ" IN CRISP WHITE/GOLD === -->
+    <!-- Banner Drop Shadow -->
+    <path
+        android:fillColor="#7C2D12"
+        android:pathData="
+            M22,81
+            L98,81
+            L94,106
+            C76,110 44,110 26,106
+            Z
+        " />
+
+    <!-- Dark Contrast Ribbon Body -->
+    <path
+        android:fillColor="#431407"
+        android:pathData="
+            M24,83
+            L96,83
+            L92,104
+            C76,108 44,108 28,104
+            Z
+        " />
+
+    <!-- Gold Border on Ribbon -->
+    <path
+        android:strokeColor="#FBBF24"
+        android:strokeWidth="1.4"
+        android:pathData="
+            M26,85
+            L94,85
+            L90.5,102.5
+            C75,106.5 45,106.5 29.5,102.5
+            Z
+        " />
+
+    <!-- === BOLD CRISP "PYQ" MONOGRAM ON RIBBON === -->
+    <!-- 'P' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M36,88
+            L45,88
+            C48,88 50,90 50,92.5
+            C50,95 48,97 45,97
+            L40,97
+            L40,102
+            L36,102
+            Z
+            M40,91
+            L44.5,91
+            C45.5,91 46.2,91.6 46.2,92.5
+            C46.2,93.4 45.5,94 44.5,94
+            L40,94
+            Z
+        " />
+    <path
+        android:fillColor="#FED7AA"
+        android:pathData="M37.5,89.5 L44.5,89.5 C46.5,89.5 47.5,90.5 47.5,92.5 C47.5,93.5 46.5,94.5 44.5,95 L41.5,95 L41.5,100.5 L39,100.5 L39,89.5 Z" />
+
+    <!-- 'Y' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M52,88
+            L56.5,88
+            L60,93.5
+            L63.5,88
+            L68,88
+            L62.5,95.5
+            L62.5,102
+            L57.5,102
+            L57.5,95.5
+            Z
+        " />
+    <path
+        android:fillColor="#FED7AA"
+        android:pathData="M54,89.5 L56.5,89.5 L60,94 L63.5,89.5 L66,89.5 L61.5,95.2 L61.5,100.5 L58.5,100.5 L58.5,95.2 Z" />
+
+    <!-- 'Q' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M70,95
+            C70,91 73.5,88 78.5,88
+            C83.5,88 87,91 87,95
+            C87,97.8 85.5,100 82.8,101
+            L85.5,103.5
+            L82.5,104.8
+            L80,101.8
+            C79.5,101.9 79,102 78.5,102
+            C73.5,102 70,99 70,95
+            Z
+            M74.5,95
+            C74.5,97.2 76,98.5 78.5,98.5
+            C81,98.5 82.5,97.2 82.5,95
+            C82.5,92.8 81,91.5 78.5,91.5
+            C76,91.5 74.5,92.8 74.5,95
+            Z
+        " />
+    <path
+        android:fillColor="#FED7AA"
+        android:pathData="
+            M72,95
+            C72,92 74.5,89.5 78.5,89.5
+            C82.5,89.5 85,92 85,95
+            C85,97 83.8,98.8 81.8,99.6
+            L84,101.8
+            L82,102.8
+            L79.8,100.4
+            C79.4,100.5 79,100.6 78.5,100.6
+            C74.5,100.6 72,98 72,95
+            Z
+        " />
+
+</vector>

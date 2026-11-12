@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- SSC (Staff Selection Commission) Officer & Knowledge Crest -->
+
+    <!-- Base Drop Shadow -->
+    <path
+        android:fillColor="#18000000"
+        android:pathData="M24,110 C24,106 96,106 96,110 C96,113 24,113 24,110 Z" />
+
+    <!-- === THREE GOLDEN 5-POINT STARS (TOP RANK BADGE) === -->
+    <!-- Center Star (Larger - 3-Star Inspector / Officer Rank) -->
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M60,6 L62.5,13 L70,13 L64,17.5 L66.5,24.5 L60,20 L53.5,24.5 L56,17.5 L50,13 L57.5,13 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M60,7.5 L62,13.5 L68,13.5 L63.2,17.2 L65.2,23 L60,19.2 L54.8,23 L56.8,17.2 L52,13.5 L58,13.5 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M60,8.5 L61.5,13.5 L65.5,13.5 L62.2,16.2 L63.5,20.5 L60,18 Z" />
+
+    <!-- Left Star -->
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M42,12 L43.8,17 L49,17 L44.8,20.2 L46.5,25 L42,21.8 L37.5,25 L39.2,20.2 L35,17 L40.2,17 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M42,13.2 L43.5,17.2 L47.5,17.2 L44.2,19.8 L45.5,23.8 L42,21.2 L38.5,23.8 L39.8,19.8 L36.5,17.2 L40.5,17.2 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M42,14 L43,17.2 L46,17.2 L43.5,19.2 L44.5,22 L42,20.5 Z" />
+
+    <!-- Right Star -->
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M78,12 L79.8,17 L85,17 L80.8,20.2 L82.5,25 L78,21.8 L73.5,25 L75.2,20.2 L71,17 L76.2,17 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M78,13.2 L79.5,17.2 L83.5,17.2 L80.2,19.8 L81.5,23.8 L78,21.2 L74.5,23.8 L75.8,19.8 L72.5,17.2 L76.5,17.2 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M78,14 L79,17.2 L82,17.2 L79.5,19.2 L80.5,22 L78,20.5 Z" />
+
+
+    <!-- === GOLDEN OFFICER SHIELD (CENTRAL GOVERNANCE CREST) === -->
+    <!-- Outer Shield Drop Shadow Base -->
+    <path
+        android:fillColor="#92400E"
+        android:pathData="
+            M26,26
+            L94,26
+            C94,26 94,62 82,78
+            C73,90 60,96 60,96
+            C60,96 47,90 38,78
+            C26,62 26,26 26,26
+            Z
+        " />
+
+    <!-- Outer Polished Gold Rim Frame -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="
+            M28,27.5
+            L92,27.5
+            C92,27.5 92,61 80.5,76.5
+            C72,88 60,94 60,94
+            C60,94 48,88 39.5,76.5
+            C28,61 28,27.5 28,27.5
+            Z
+        " />
+
+    <!-- Inner Gold Bevel Rim -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="
+            M30,29
+            L90,29
+            C90,29 90,60 79,75
+            C71,86 60,91.5 60,91.5
+            C60,91.5 49,86 41,75
+            C30,60 30,29 30,29
+            Z
+        " />
+
+    <!-- Shield Face Rim Accent (Pure Golden Sheen) -->
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="
+            M31.5,30.5
+            L88.5,30.5
+            C88.5,30.5 88.5,59 77.8,73.5
+            C70.2,84 60,89.5 60,89.5
+            C60,89.5 49.8,84 42.2,73.5
+            C31.5,59 31.5,30.5 31.5,30.5
+            Z
+        " />
+
+    <!-- Main Shield Field: Royal Navy Blue (Officer Authority & Integrity) -->
+    <path
+        android:fillColor="#0A1931"
+        android:pathData="
+            M33,32
+            L87,32
+            C87,32 87,58 76.5,72
+            C69.5,82 60,87.5 60,87.5
+            C60,87.5 50.5,82 43.5,72
+            C33,58 33,32 33,32
+            Z
+        " />
+
+    <!-- Left Shield Rich Blue Highlight Split (Dynamic Light) -->
+    <path
+        android:fillColor="#15305B"
+        android:pathData="
+            M33,32
+            L60,32
+            L60,87.5
+            C60,87.5 50.5,82 43.5,72
+            C33,58 33,32 33,32
+            Z
+        " />
+
+    <!-- Subtle Diagonal Gloss Sheen on Shield Face -->
+    <path
+        android:fillColor="#1E3E73"
+        android:pathData="
+            M34,33
+            L56,33
+            L40,70
+            L34,60
+            Z
+        " />
+
+
+    <!-- === CROSS-SWORDS / CROSSED GOLDEN QUILL PENS (WISDOM & MERIT) === -->
+    <!-- Left Pen/Sword Quill Shaft -->
+    <path
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M38,72 L82,38" />
+    <path
+        android:strokeColor="#FEF08A"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M38,72 L82,38" />
+    <!-- Nib Point Left -->
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M36,73.5 L39,71 L40.5,75 Z" />
+
+    <!-- Right Pen/Sword Quill Shaft -->
+    <path
+        android:strokeColor="#D97706"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M82,72 L38,38" />
+    <path
+        android:strokeColor="#FDE68A"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M82,72 L38,38" />
+    <!-- Nib Point Right -->
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M84,73.5 L81,71 L79.5,75 Z" />
+
+
+    <!-- === CENTRAL SACRED ASHOKA CHAKRA (ROYAL GOLD WHEEL OF LAW) === -->
+    <!-- Outer Glow Rim -->
+    <path
+        android:fillColor="#92400E"
+        android:pathData="M60,57 m-15,0 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M60,57 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0" />
+    <!-- Deep Navy Recess in Wheel -->
+    <path
+        android:fillColor="#0A1931"
+        android:pathData="M60,57 m-12,0 a12,12 0 1,0 24,0 a12,12 0 1,0 -24,0" />
+    <!-- Gold Wheel Inner Bezel -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M60,57 m-10.5,0 a10.5,10.5 0 1,0 21,0 a10.5,10.5 0 1,0 -21,0" />
+    <!-- Dark Hub Disc -->
+    <path
+        android:fillColor="#0A1931"
+        android:pathData="M60,57 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+
+    <!-- 24 Spokes of Ashoka Dharma Chakra (Sharp High-Contrast Gold) -->
+    <path
+        android:strokeColor="#FCD34D"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:pathData="
+            M60,48 L60,66
+            M51,57 L69,57
+            M53.6,50.6 L66.4,63.4
+            M53.6,63.4 L66.4,50.6
+            M56.5,48.5 L63.5,65.5
+            M56.5,65.5 L63.5,48.5
+            M48.5,53.5 L65.5,60.5
+            M48.5,60.5 L65.5,53.5
+        " />
+
+    <!-- Central Axle Hub -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M60,57 m-3.2,0 a3.2,3.2 0 1,0 6.4,0 a3.2,3.2 0 1,0 -6.4,0" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M60,57 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+    <path
+        android:fillColor="#0A1931"
+        android:pathData="M60,57 m-0.8,0 a0.8,0.8 0 1,0 1.6,0 a0.8,0.8 0 1,0 -1.6,0" />
+
+
+    <!-- === FLAMING TORCH OF KNOWLEDGE (मशाल - VICTORY FLAME) === -->
+    <!-- Torch Handle/Staff Base (Gold Chiseled Pillar) -->
+    <path
+        android:fillColor="#78350F"
+        android:pathData="M58,68 L62,68 L61.5,82 L58.5,82 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M58.5,68 L61.5,68 L61,81.5 L59,81.5 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M59,68 L60.2,68 L60,81.5 L59.5,81.5 Z" />
+
+    <!-- Torch Cup / Brasier (Golden Goblet) -->
+    <path
+        android:fillColor="#78350F"
+        android:pathData="M54,40 L66,40 L63,47 L57,47 Z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M54.8,40.5 L65.2,40.5 L62.5,46.5 L57.5,46.5 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M55.5,40.5 L64.5,40.5 L64,42 L56,42 Z" />
+
+    <!-- Dynamic Vibrant Flame (Tricolor Inspired: Saffron, Gold, White) -->
+    <!-- Outer Crimson/Saffron Flame -->
+    <path
+        android:fillColor="#EA580C"
+        android:pathData="
+            M60,20
+            C66,27 70,32 67,39
+            C65,42 62,41 60,41
+            C58,41 55,42 53,39
+            C50,32 54,27 60,20
+            Z
+        " />
+    <!-- Vibrant Amber Flame Layer -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="
+            M60,23
+            C64,28 67,33 65,39
+            C63,41 61.5,40.5 60,40.5
+            C58.5,40.5 57,41 55,39
+            C53,33 56,28 60,23
+            Z
+        " />
+    <!-- Bright Yellow Core Flame -->
+    <path
+        android:fillColor="#FDE047"
+        android:pathData="
+            M60,26
+            C63,30 65,34 63,39
+            C61.5,40 60.5,39.5 60,39.5
+            C59.5,39.5 58.5,40 57,39
+            C55,34 57,30 60,26
+            Z
+        " />
+    <!-- Brilliant White Hot Teardrop Spark Center -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M60,29
+            C61.5,32 62.5,35 61.5,38
+            C60.8,38.8 60,38.8 60,38.8
+            C60,38.8 59.2,38.8 58.5,38
+            C57.5,35 58.5,32 60,29
+            Z
+        " />
+
+
+    <!-- === GOLDEN VICTORY LAUREL WREATH (ELEGANT FLANKING BRANCHES) === -->
+    <!-- Left Stem -->
+    <path
+        android:strokeColor="#C88E10"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M24,86 C14,70 14,48 24,34" />
+    <!-- Left Leaves -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M24,84 C18,83 16,77 21,74 C24,78 24,81 24,84 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M23,82 C19,81 18,77 21,75 Z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M19,72 C13,70 12,63 18,62 C21,66 21,69 19,72 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M18,70 C14,68 14,64 18,63 Z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M17,59 C11,55 11,49 18,49 C20,53 19,56 17,59 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M17,57 C13,54 13,50 18,50 Z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M20,46 C15,41 17,35 24,36 C24,40 23,43 20,46 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M20,44 C16,40 18,37 23,37 Z" />
+
+    <!-- Right Stem -->
+    <path
+        android:strokeColor="#C88E10"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M96,86 C106,70 106,48 96,34" />
+    <!-- Right Leaves -->
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M96,84 C102,83 104,77 99,74 C96,78 96,81 96,84 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M97,82 C101,81 102,77 99,75 Z" />
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M101,72 C107,70 108,63 102,62 C99,66 99,69 101,72 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M102,70 C106,68 106,64 102,63 Z" />
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M103,59 C109,55 109,49 102,49 C100,53 101,56 103,59 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M103,57 C107,54 107,50 102,50 Z" />
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M100,46 C105,41 103,35 96,36 C96,40 97,43 100,46 Z" />
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M100,44 C104,40 102,37 97,37 Z" />
+
+
+    <!-- === CEREMONIAL GOLDEN RIBBON / BANNER WITH "SSC" INSCRIPTION === -->
+    <!-- Ribbon Shadow Base -->
+    <path
+        android:fillColor="#78350F"
+        android:pathData="
+            M22,96
+            L32,92
+            L32,97
+            L60,93
+            L88,97
+            L88,92
+            L98,96
+            L94,103
+            L88,100
+            L88,103
+            L60,107
+            L32,103
+            L32,100
+            L26,103
+            Z
+        " />
+
+    <!-- Left Ribbon Fold / Tail (Dark Gold Depth) -->
+    <path
+        android:fillColor="#92400E"
+        android:pathData="M22,96 L33,93 L33,103 L25,103 L22,96 Z" />
+    <path
+        android:fillColor="#B45309"
+        android:pathData="M23,97 L32,94.5 L32,102 L26,102 Z" />
+
+    <!-- Right Ribbon Fold / Tail (Dark Gold Depth) -->
+    <path
+        android:fillColor="#92400E"
+        android:pathData="M98,96 L87,93 L87,103 L95,103 L98,96 Z" />
+    <path
+        android:fillColor="#B45309"
+        android:pathData="M97,97 L88,94.5 L88,102 L94,102 Z" />
+
+    <!-- Main Center Front Ribbon Banner (Curved 3D Gold Surface) -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="
+            M30,94
+            C44,91 76,91 90,94
+            L88,104
+            C75,107 45,107 32,104
+            Z
+        " />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="
+            M31.5,95
+            C44.5,92.5 75.5,92.5 88.5,95
+            L87,102.5
+            C75,105.5 45,105.5 33,102.5
+            Z
+        " />
+    <!-- Top & Bottom Golden Beveled Edges -->
+    <path
+        android:strokeColor="#FEF08A"
+        android:strokeWidth="0.9"
+        android:strokeLineCap="round"
+        android:pathData="
+            M32,95 C45,92.8 75,92.8 88,95
+            M33,102.5 C45,105.2 75,105.2 87,102.5
+        " />
+
+    <!-- "SSC" BOLD GEOMETRIC INSCRIPTION (High Contrast Navy & Pure Gold) -->
+    <!-- First Letter 'S' -->
+    <path
+        android:strokeColor="#0A1931"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M48,96.5 C46.2,96.2 44.5,97 44.5,98.5 C44.5,100 47.5,100 47.5,101.5 C47.5,103 45.8,103.5 44,103.2" />
+    <path
+        android:strokeColor="#FEF08A"
+        android:strokeWidth="1.1"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M48,96.5 C46.2,96.2 44.5,97 44.5,98.5 C44.5,100 47.5,100 47.5,101.5 C47.5,103 45.8,103.5 44,103.2" />
+
+    <!-- Second Letter 'S' -->
+    <path
+        android:strokeColor="#0A1931"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M62,96.5 C60.2,96.2 58.5,97 58.5,98.5 C58.5,100 61.5,100 61.5,101.5 C61.5,103 59.8,103.5 58,103.2" />
+    <path
+        android:strokeColor="#FEF08A"
+        android:strokeWidth="1.1"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M62,96.5 C60.2,96.2 58.5,97 58.5,98.5 C58.5,100 61.5,100 61.5,101.5 C61.5,103 59.8,103.5 58,103.2" />
+
+    <!-- Third Letter 'C' -->
+    <path
+        android:strokeColor="#0A1931"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M75.5,96.5 C73,96.2 71.5,97.5 71.5,99.8 C71.5,102.2 73,103.5 75.5,103.2" />
+    <path
+        android:strokeColor="#FEF08A"
+        android:strokeWidth="1.1"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M75.5,96.5 C73,96.2 71.5,97.5 71.5,99.8 C71.5,102.2 73,103.5 75.5,103.2" />
+
+</vector>

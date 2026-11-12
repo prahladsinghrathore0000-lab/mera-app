@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Grand State Secretariat / Vidhan Sabha (State PSC & Administration Crest) -->
+
+    <!-- Ambient Shadow under foundation -->
+    <path
+        android:fillColor="#15000000"
+        android:pathData="M20,111 C20,107 100,107 100,111 C100,114 20,114 20,111 Z" />
+
+    <!-- === EMERALD & GOLD VICTORY LAUREL WREATH (Side Embellishments) === -->
+    <!-- Left Laurel Stem -->
+    <path
+        android:strokeColor="#047857"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M30,98 C18,82 18,52 32,36" />
+    <!-- Left Leaves -->
+    <path
+        android:fillColor="#059669"
+        android:pathData="M29,97 C22,96 20,89 25,86 C28,90 29,94 29,97 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M28,95 C23,94 22,89 25,87 Z" />
+    <path
+        android:fillColor="#059669"
+        android:pathData="M23,85 C16,83 14,76 20,74 C23,78 23,82 23,85 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M22,83 C17,81 16,76 20,75 Z" />
+    <path
+        android:fillColor="#059669"
+        android:pathData="M19,72 C12,69 11,62 17,61 C20,65 20,69 19,72 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M18,70 C13,67 13,63 17,62 Z" />
+    <path
+        android:fillColor="#059669"
+        android:pathData="M18,58 C12,54 12,47 19,47 C21,51 20,55 18,58 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M18,56 C13,53 14,48 19,48 Z" />
+    <path
+        android:fillColor="#059669"
+        android:pathData="M21,45 C16,40 18,33 25,34 C25,38 24,42 21,45 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M21,43 C17,39 19,35 24,35 Z" />
+
+    <!-- Right Laurel Stem -->
+    <path
+        android:strokeColor="#047857"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M90,98 C102,82 102,52 88,36" />
+    <!-- Right Leaves -->
+    <path
+        android:fillColor="#047857"
+        android:pathData="M91,97 C98,96 100,89 95,86 C92,90 91,94 91,97 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M92,95 C97,94 98,89 95,87 Z" />
+    <path
+        android:fillColor="#047857"
+        android:pathData="M97,85 C104,83 106,76 100,74 C97,78 97,82 97,85 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M98,83 C103,81 104,76 100,75 Z" />
+    <path
+        android:fillColor="#047857"
+        android:pathData="M101,72 C108,69 109,62 103,61 C100,65 100,69 101,72 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M102,70 C107,67 107,63 103,62 Z" />
+    <path
+        android:fillColor="#047857"
+        android:pathData="M102,58 C108,54 108,47 101,47 C99,51 100,55 102,58 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M102,56 C107,53 106,48 101,48 Z" />
+    <path
+        android:fillColor="#047857"
+        android:pathData="M99,45 C104,40 102,33 95,34 C95,38 96,42 99,45 Z" />
+    <path
+        android:fillColor="#6EE7B7"
+        android:pathData="M99,43 C103,39 101,35 96,35 Z" />
+
+
+    <!-- === TIRANGA (INDIAN NATIONAL FLAG) ATOP CAPITOL DOME === -->
+    <!-- Mast / Flagpole (Gold Tip) -->
+    <path
+        android:strokeColor="#78350F"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:pathData="M60,6 L60,28" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M60,5 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+
+    <!-- Fluttering Waving Tiranga Flag -->
+    <!-- Saffron Stripe (Top) -->
+    <path
+        android:fillColor="#FF671F"
+        android:pathData="
+            M60,7
+            C66,5 72,9 78,7
+            L78,12
+            C72,14 66,10 60,12
+            Z
+        " />
+    <!-- White Stripe (Middle) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#E5E7EB"
+        android:strokeWidth="0.4"
+        android:pathData="
+            M60,12
+            C66,10 72,14 78,12
+            L78,17
+            C72,19 66,15 60,17
+            Z
+        " />
+    <!-- Ashoka Chakra on Flag -->
+    <path
+        android:fillColor="#06038D"
+        android:pathData="M69,14.5 m-1.4,0 a1.4,1.4 0 1,0 2.8,0 a1.4,1.4 0 1,0 -2.8,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M69,14.5 m-0.8,0 a0.8,0.8 0 1,0 1.6,0 a0.8,0.8 0 1,0 -1.6,0" />
+    <path
+        android:fillColor="#06038D"
+        android:pathData="M69,14.5 m-0.3,0 a0.3,0.3 0 1,0 0.6,0 a0.3,0.3 0 1,0 -0.6,0" />
+
+    <!-- Green Stripe (Bottom) -->
+    <path
+        android:fillColor="#046A38"
+        android:pathData="
+            M60,17
+            C66,15 72,19 78,17
+            L78,22
+            C72,24 66,20 60,22
+            Z
+        " />
+
+
+    <!-- === MAJESTIC MONUMENTAL CAPITOL DOME (VIDHAN SABHA) === -->
+
+    <!-- Dome Lantern / Finial Cupola -->
+    <path
+        android:fillColor="#047857"
+        android:pathData="M57,28 L63,28 L61.5,24 L58.5,24 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M58,25 L62,25 L61,24 L59,24 Z" />
+
+    <!-- Main Central Architectural Dome -->
+    <!-- Dome Shadow Frame -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M44,43 C44,28 76,28 76,43 Z" />
+    <!-- Dome Emerald Surface -->
+    <path
+        android:fillColor="#059669"
+        android:pathData="M45.5,43 C45.5,29.5 74.5,29.5 74.5,43 Z" />
+    <!-- Dome Vertical Rib Curves (Architectural Fluting) -->
+    <path
+        android:strokeColor="#047857"
+        android:strokeWidth="1"
+        android:pathData="
+            M50,43 C50,33 55,30 60,29
+            M70,43 C70,33 65,30 60,29
+            M55,43 C55,35 58,31 60,29
+            M65,43 C65,35 62,31 60,29
+        " />
+    <!-- Dome Specular Highlight -->
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M49,38 C51,32 58,30 60,30 C56,31 51,34 49,38 Z" />
+
+    <!-- Dome Drum Base / Cornice (Golden Accent Band) -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M42,43 L78,43 L78,47 L42,47 Z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M43,44 L77,44 L77,46 L43,46 Z" />
+    <!-- Drum Windows / Niches -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="
+            M46,47 L50,47 L50,50 L46,50 Z
+            M54,47 L58,47 L58,50 L54,50 Z
+            M62,47 L66,47 L66,50 L62,50 Z
+            M70,47 L74,47 L74,50 L70,50 Z
+        " />
+
+
+    <!-- === CLASSICAL TEMPLE PEDIMENT (PORTICO TRIANGLE) === -->
+    <!-- Upper Pediment Triangle -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M32,54 L60,45 L88,54 Z" />
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M34,53.5 L60,46.5 L86,53.5 Z" />
+    <!-- Pediment Golden Border Architrave -->
+    <path
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"
+        android:pathData="M33,54 L60,45.5 L87,54 Z" />
+    <!-- Central State Gold Star in Pediment -->
+    <path
+        android:fillColor="#FEF08A"
+        android:pathData="M60,49 L60.8,51 L63,51 L61.2,52.2 L61.8,54.2 L60,53 L58.2,54.2 L58.8,52.2 L57,51 L59.2,51 Z" />
+
+    <!-- Entablature / Frieze Band under Pediment -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M30,54 L90,54 L90,58 L30,58 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M31,55 L89,55 L89,57 L31,57 Z" />
+
+
+    <!-- === GRAND COLONNADE (SIX NEOCLASSICAL FLUTED PILLARS) === -->
+    <!-- Column 1 (Far Left) -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M33,58 L39,58 L39,82 L33,82 Z" />
+    <path
+        android:fillColor="#F0FDF4"
+        android:pathData="M34,58 L38,58 L38,82 L34,82 Z" />
+    <path
+        android:strokeColor="#A7F3D0"
+        android:strokeWidth="0.8"
+        android:pathData="M36,58 L36,82" />
+
+    <!-- Column 2 -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M43,58 L49,58 L49,82 L43,82 Z" />
+    <path
+        android:fillColor="#F0FDF4"
+        android:pathData="M44,58 L48,58 L48,82 L44,82 Z" />
+    <path
+        android:strokeColor="#A7F3D0"
+        android:strokeWidth="0.8"
+        android:pathData="M46,58 L46,82" />
+
+    <!-- Column 3 -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M53,58 L59,58 L59,82 L53,82 Z" />
+    <path
+        android:fillColor="#F0FDF4"
+        android:pathData="M54,58 L58,58 L58,82 L54,82 Z" />
+    <path
+        android:strokeColor="#A7F3D0"
+        android:strokeWidth="0.8"
+        android:pathData="M56,58 L56,82" />
+
+    <!-- Column 4 -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M61,58 L67,58 L67,82 L61,82 Z" />
+    <path
+        android:fillColor="#F0FDF4"
+        android:pathData="M62,58 L66,58 L66,82 L62,82 Z" />
+    <path
+        android:strokeColor="#A7F3D0"
+        android:strokeWidth="0.8"
+        android:pathData="M64,58 L64,82" />
+
+    <!-- Column 5 -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M71,58 L77,58 L77,82 L71,82 Z" />
+    <path
+        android:fillColor="#F0FDF4"
+        android:pathData="M72,58 L76,58 L76,82 L72,82 Z" />
+    <path
+        android:strokeColor="#A7F3D0"
+        android:strokeWidth="0.8"
+        android:pathData="M74,58 L74,82" />
+
+    <!-- Column 6 (Far Right) -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M81,58 L87,58 L87,82 L81,82 Z" />
+    <path
+        android:fillColor="#F0FDF4"
+        android:pathData="M82,58 L86,58 L86,82 L82,82 Z" />
+    <path
+        android:strokeColor="#A7F3D0"
+        android:strokeWidth="0.8"
+        android:pathData="M84,58 L84,82" />
+
+    <!-- Grand Portico Entrance Arch Behind Pillars (Central Portal) -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M56,66 C56,62 64,62 64,66 L64,82 L56,82 Z" />
+    <path
+        android:fillColor="#022C22"
+        android:pathData="M57,67 C57,64 63,64 63,67 L63,82 L57,82 Z" />
+
+
+    <!-- === CEREMONIAL STEPS (PLINTH PODIUM) === -->
+    <!-- Step 1 (Top) -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M30,82 L90,82 L90,85 L30,85 Z" />
+    <path
+        android:fillColor="#A7F3D0"
+        android:pathData="M31,82 L89,82 L89,84 L31,84 Z" />
+
+    <!-- Step 2 (Middle) -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M27,85 L93,85 L93,88 L27,88 Z" />
+    <path
+        android:fillColor="#D1FAE5"
+        android:pathData="M28,85 L92,85 L92,87 L28,87 Z" />
+
+    <!-- Step 3 (Bottom Grand Slab) -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M24,88 L96,88 L96,92 L24,92 Z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M25,88 L95,88 L95,90 L25,90 Z" />
+
+
+    <!-- === EMBLEMATIC FOREGROUND: OPEN BOOK OF CONSTITUTION & WISDOM (ज्ञान व विधि) === -->
+    <!-- Book Shadow -->
+    <path
+        android:fillColor="#15000000"
+        android:pathData="M36,108 C48,103 72,103 84,108 C72,110 48,110 36,108 Z" />
+
+    <!-- Open Book Cover (Rich Saffron / Gold Binding) -->
+    <path
+        android:fillColor="#78350F"
+        android:pathData="
+            M36,97
+            C48,93 59,96 60,98
+            C61,96 72,93 84,97
+            L85,105
+            C73,101 61,104 60,106
+            C59,104 47,101 35,105
+            Z
+        " />
+    <path
+        android:fillColor="#D97706"
+        android:pathData="
+            M37,97.5
+            C48,94 59,96.8 60,98.5
+            C61,96.8 72,94 83,97.5
+            L84,104.5
+            C73,101.5 61,104.2 60,105.5
+            C59,104.2 47,101.5 36,104.5
+            Z
+        " />
+
+    <!-- Book Pages (Pristine White with Subtle Shading) -->
+    <!-- Left Open Page -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M38,96
+            C48,92.5 58,95 60,97
+            L60,104
+            C58,102 48,99.5 38,103
+            Z
+        " />
+    <!-- Right Open Page -->
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="
+            M82,96
+            C72,92.5 62,95 60,97
+            L60,104
+            C62,102 72,99.5 82,103
+            Z
+        " />
+
+    <!-- Text Lines on Open Pages (Representing Constitution of India & Law) -->
+    <!-- Left Page Lines -->
+    <path
+        android:strokeColor="#047857"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="
+            M41,96.5 L56,95
+            M41,98.5 L56,97
+            M41,100.5 L54,99
+        " />
+    <!-- Right Page Lines -->
+    <path
+        android:strokeColor="#047857"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:pathData="
+            M64,95 L79,96.5
+            M64,97 L79,98.5
+            M66,99 L79,100.5
+        " />
+
+    <!-- Book Spine Ribbon Bookmark (Tricolor Accent) -->
+    <path
+        android:fillColor="#FF671F"
+        android:pathData="M59.2,97.5 L60.8,97.5 L61.5,108 L60,106.5 L58.5,108 Z" />
+
+</vector>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "457646673413",
+    "project_id": "free-pyq",
+    "storage_bucket": "free-pyq.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457646673413:android:79a4a8a9459c1db780166c",
+        "android_client_info": {
+          "package_name": "com.aistudio.exammitra.qvrkpm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJeHvrCd7f9c5dvuJ6Ak-aUs4MbnNuPhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

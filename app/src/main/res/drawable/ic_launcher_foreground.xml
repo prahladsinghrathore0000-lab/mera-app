@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Graduation Cap Top Diamond -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28 L84,40 L54,52 L24,40 Z" />
+    <!-- Graduation Cap Cap Base -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M34,44.5 L34,57 C34,65 74,65 74,57 L74,44.5 L54,52.5 Z" />
+    <!-- Tassel and Ribbon -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M81,41.2 L83,56 L86,59 L80,59 L83,56 Z" />
+    <!-- Open Book / Wings of knowledge below -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,67 C48,63 36,63 26,66 L26,79 C36,76 48,76 54,80 C60,76 72,76 82,79 L82,66 C72,63 60,63 54,67 Z" />
+    <!-- Central dividing spine -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M53,66 L55,66 L55,80 L53,80 Z" />
+</vector>

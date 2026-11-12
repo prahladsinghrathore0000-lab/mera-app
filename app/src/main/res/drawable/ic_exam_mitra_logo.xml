@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="36dp"
+    android:viewportWidth="36"
+    android:viewportHeight="36">
+    <!-- Shield / Badge background -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M18,3 L31,7 L31,19 C31,27 25,32 18,34 C11,32 5,27 5,19 L5,7 Z" />
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M18,5 L29,8.5 L29,18.5 C29,25.5 24,29.8 18,31.8 C12,29.8 7,25.5 7,18.5 L7,8.5 Z" />
+    <!-- Graduation Cap inside -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18,11 L26,15 L18,19 L10,15 Z" />
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M13,16.5 L13,20.5 C13,23.5 23,23.5 23,20.5 L23,16.5 L18,19 Z" />
+    <!-- Tassel -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M25,15.5 L26,20.5 L27,21.5 L25,21.5 Z" />
+    <!-- Star / Emblem -->
+    <path
+        android:fillColor="#60A5FA"
+        android:pathData="M18,24 L19.2,26.5 L22,26.8 L20,28.6 L20.5,31 L18,29.7 L15.5,31 L16,28.6 L14,26.8 L16.8,26.5 Z" />
+</vector>

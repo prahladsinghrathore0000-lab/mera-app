@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Front-Facing High-Speed Indian Locomotive Train (Premium 3D Art) -->
+
+    <!-- === PERSPECTIVE RAILWAY TRACKS & BALLAST === -->
+    <!-- Ballast Bed Shadow Ground -->
+    <path
+        android:fillColor="#15000000"
+        android:pathData="M20,112 C20,108 100,108 100,112 C100,114 20,114 20,112 Z" />
+
+    <!-- Concrete Sleepers (Cross Ties in perspective) -->
+    <!-- Sleeper 1 (Far background) -->
+    <path
+        android:strokeColor="#373B42"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M34,98 L86,98" />
+    <path
+        android:strokeColor="#5C6370"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M35,97 L85,97" />
+
+    <!-- Sleeper 2 (Mid distance) -->
+    <path
+        android:strokeColor="#2E3238"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M28,103 L92,103" />
+    <path
+        android:strokeColor="#525863"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M29,102 L91,102" />
+
+    <!-- Sleeper 3 (Foreground) -->
+    <path
+        android:strokeColor="#22252A"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M22,109 L98,109" />
+    <path
+        android:strokeColor="#4A4F59"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M23,108 L97,108" />
+
+    <!-- Steel Rails (Perspective lines converging toward train) -->
+    <!-- Left Rail Base Shadow -->
+    <path
+        android:strokeColor="#181A1D"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M40,92 L25,114" />
+    <!-- Left Rail Polished Steel Highlight -->
+    <path
+        android:strokeColor="#B0B8C4"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M40,92 L25,114" />
+
+    <!-- Right Rail Base Shadow -->
+    <path
+        android:strokeColor="#181A1D"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M80,92 L95,114" />
+    <!-- Right Rail Polished Steel Highlight -->
+    <path
+        android:strokeColor="#B0B8C4"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M80,92 L95,114" />
+
+
+    <!-- === LOWER COWCATCHER (PILOT PLOW) & CHASSIS === -->
+    <!-- Cowcatcher Outer Wedge Frame -->
+    <path
+        android:fillColor="#24272D"
+        android:strokeColor="#151619"
+        android:strokeWidth="1.8"
+        android:strokeLineJoin="round"
+        android:pathData="M40,88 L80,88 L86,96 L34,96 Z" />
+    <!-- Cowcatcher Steel Grill Slats -->
+    <path
+        android:strokeColor="#4B505A"
+        android:strokeWidth="1.5"
+        android:pathData="
+            M43,89 L40,95
+            M49,89 L48,95
+            M55,89 L55,95
+            M60,89 L60,95
+            M65,89 L65,95
+            M71,89 L72,95
+            M77,89 L80,95
+        " />
+    <!-- Coupler Knuckle (Center Hitch) -->
+    <path
+        android:fillColor="#151619"
+        android:strokeColor="#525863"
+        android:strokeWidth="1"
+        android:pathData="M56.5,92 L63.5,92 L63.5,96 L56.5,96 Z" />
+
+
+    <!-- === ROOF PANTOGRAPH & APPARATUS === -->
+    <!-- Roof equipment base -->
+    <path
+        android:strokeColor="#363A42"
+        android:strokeWidth="1.5"
+        android:pathData="M48,14 L72,14 M50,11 L70,11" />
+    <!-- Pantograph Linkage Diamond Arm -->
+    <path
+        android:strokeColor="#565C69"
+        android:strokeWidth="1.4"
+        android:strokeLineJoin="round"
+        android:pathData="M54,11 L60,5 L66,11" />
+    <path
+        android:strokeColor="#C5CCD6"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M52,5 L68,5" />
+
+
+    <!-- === MAIN LOCOMOTIVE BODY (Deep Burgundy / Indian Railways Maroon) === -->
+    
+    <!-- Outer Dark Shadow Silhouette Frame -->
+    <path
+        android:fillColor="#18191D"
+        android:pathData="
+            M36,36
+            C36,15 84,15 84,36
+            L84,84
+            C84,89 76,91 60,91
+            C44,91 36,89 36,84
+            Z
+        " />
+
+    <!-- Deep Maroon Base Shell -->
+    <path
+        android:fillColor="#581219"
+        android:pathData="
+            M37.5,37
+            C37.5,17 82.5,17 82.5,37
+            L82.5,83
+            C82.5,87 75,89.5 60,89.5
+            C45,89.5 37.5,87 37.5,83
+            Z
+        " />
+
+    <!-- Rich Vibrant Crimson/Wine-Red Center High-Gloss Panel -->
+    <path
+        android:fillColor="#761B25"
+        android:pathData="
+            M40,38
+            C40,21 80,21 80,38
+            L80,82
+            C80,85.5 73,88 60,88
+            C47,88 40,85.5 40,82
+            Z
+        " />
+
+    <!-- Top Aerodynamic Roof Dome Highlight -->
+    <path
+        android:fillColor="#912431"
+        android:pathData="
+            M44,28
+            C50,21 70,21 76,28
+            C69,24 51,24 44,28
+            Z
+        " />
+
+    <!-- Top Cyclops Headlight (High-Intensity Marker Lamp at Roof Peak) -->
+    <path
+        android:fillColor="#1C1D21"
+        android:pathData="M60,20 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" />
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M60,20 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,20 m-1.2,0 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0" />
+
+
+    <!-- === PANORAMIC TINTED WINDSHIELD (Large Modern Glass) === -->
+    <!-- Black Rubber Gasket Border -->
+    <path
+        android:fillColor="#18191D"
+        android:pathData="
+            M40,39
+            C40,34 80,34 80,39
+            L80,56
+            C80,60 76,61 60,61
+            C44,61 40,60 40,56
+            Z
+        " />
+
+    <!-- Deep Smoke-Tinted Glass Surface -->
+    <path
+        android:fillColor="#282D36"
+        android:pathData="
+            M42,40.5
+            C42,36 78,36 78,40.5
+            L78,55
+            C78,58 75,59.5 60,59.5
+            C45,59.5 42,58 42,55
+            Z
+        " />
+
+    <!-- Realistic Diagonal Glass Reflection Glare (Gloss Finish) -->
+    <path
+        android:fillColor="#4D5563"
+        android:pathData="
+            M43,40.5
+            L64,40.5
+            L52,59
+            L43,58.5
+            Z
+        " />
+    <path
+        android:fillColor="#8793A6"
+        android:pathData="
+            M45,40.5
+            L53,40.5
+            L46,57
+            L43,55
+            Z
+        " />
+    <!-- Subtle Sky Blue Tint Reflection Line -->
+    <path
+        android:strokeColor="#748CA3"
+        android:strokeWidth="0.8"
+        android:pathData="M67,41 L76,41 L74,53" />
+
+    <!-- Windshield Center Divider & Modern Dual Aerodynamic Wipers -->
+    <path
+        android:strokeColor="#18191D"
+        android:strokeWidth="1.4"
+        android:pathData="M60,37 L60,60" />
+    <path
+        android:strokeColor="#18191D"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M50,57 L55,47 M70,57 L65,47" />
+
+
+    <!-- === AERODYNAMIC NOSE CONTOUR & ACCENT STRIPES === -->
+    <!-- Crisp Golden-Yellow / Silver Chevron Speed Stripes -->
+    <path
+        android:strokeColor="#FFC107"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:pathData="M38,65 L52,65 L56,69 L64,69 L68,65 L82,65" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:pathData="M39,67 L51,67 L55,70.5 L65,70.5 L69,67 L81,67" />
+
+    <!-- Center Nose Plaque / Indian Railways Gold Medallion Crest -->
+    <path
+        android:fillColor="#151619"
+        android:pathData="M60,70 m-4.2,0 a4.2,4.2 0 1,0 8.4,0 a4.2,4.2 0 1,0 -8.4,0" />
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M60,70 m-3.2,0 a3.2,3.2 0 1,0 6.4,0 a3.2,3.2 0 1,0 -6.4,0" />
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M60,70 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <!-- Miniature Ashoka wheel hub on train badge -->
+    <path
+        android:fillColor="#151619"
+        android:pathData="M60,70 m-0.8,0 a0.8,0.8 0 1,0 1.6,0 a0.8,0.8 0 1,0 -1.6,0" />
+
+
+    <!-- === DUAL HIGH-BEAM PROJECTOR HEADLIGHTS === -->
+    
+    <!-- LEFT HEADLIGHT UNIT -->
+    <!-- Dark housing casing -->
+    <path
+        android:fillColor="#18191E"
+        android:pathData="M45,76 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <!-- Polished Chrome Bezel Ring -->
+    <path
+        android:fillColor="#B8C0CC"
+        android:pathData="M45,76 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <!-- Glowing Golden Yellow Reflector -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M45,76 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+    <!-- Intense Bright White/Lemon Beam Center Core -->
+    <path
+        android:fillColor="#FFFDE7"
+        android:pathData="M45,76 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+    <!-- Lens Flare Sparkle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44.2,75.2 m-0.6,0 a0.6,0.6 0 1,0 1.2,0 a0.6,0.6 0 1,0 -1.2,0" />
+
+    <!-- RIGHT HEADLIGHT UNIT -->
+    <!-- Dark housing casing -->
+    <path
+        android:fillColor="#18191E"
+        android:pathData="M75,76 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <!-- Polished Chrome Bezel Ring -->
+    <path
+        android:fillColor="#B8C0CC"
+        android:pathData="M75,76 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <!-- Glowing Golden Yellow Reflector -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M75,76 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+    <!-- Intense Bright White/Lemon Beam Center Core -->
+    <path
+        android:fillColor="#FFFDE7"
+        android:pathData="M75,76 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+    <!-- Lens Flare Sparkle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M74.2,75.2 m-0.6,0 a0.6,0.6 0 1,0 1.2,0 a0.6,0.6 0 1,0 -1.2,0" />
+
+
+    <!-- === LOWER RED MARKER LIGHTS === -->
+    <path
+        android:fillColor="#E53935"
+        android:strokeColor="#18191E"
+        android:strokeWidth="0.8"
+        android:pathData="M40,82 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+    <path
+        android:fillColor="#E53935"
+        android:strokeColor="#18191E"
+        android:strokeWidth="0.8"
+        android:pathData="M80,82 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+
+</vector>
