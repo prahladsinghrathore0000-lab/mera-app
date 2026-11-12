@@ -1,0 +1,6 @@
+{
+  "name": "FREE PYQ",
+  "description": "Free All Exam Previous Year Questions and Chapter Wise practice with SSC, Railway, and State Exam categories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
