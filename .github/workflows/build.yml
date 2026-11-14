@@ -21,7 +21,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: '9.3.1'
-
+      - name: CHECK TOKEN AAYA YA NAHI
+        run: |
+          if [ -z "${{ secrets.GH_SYNC_TOKEN }}" ]; then echo "TOKEN MISSING HAI"; else echo "TOKEN MIL GAYA"; fi
+          if [ -z "${{ secrets.GEMINI_API_KEY_1 }}" ]; then echo "GEMINI MISSING HAI"; else echo "GEMINI MIL GAYA"; fi
       - name: Create .env file from Secrets
         run: |
           echo "GEMINI_API_KEY_1=${{ secrets.GEMINI_API_KEY_1 }}" >> .env
