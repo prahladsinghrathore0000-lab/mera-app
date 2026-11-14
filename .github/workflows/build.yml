@@ -21,10 +21,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: '9.3.1'
-      - name: CHECK TOKEN AAYA YA NAHI
-        run: |
-          if [ -z "${{ secrets.GH_SYNC_TOKEN }}" ]; then echo "TOKEN MISSING HAI"; else echo "TOKEN MIL GAYA"; fi
-          if [ -z "${{ secrets.GEMINI_API_KEY_1 }}" ]; then echo "GEMINI MISSING HAI"; else echo "GEMINI MIL GAYA"; fi
+
       - name: Create .env file from Secrets
         run: |
           echo "GEMINI_API_KEY_1=${{ secrets.GEMINI_API_KEY_1 }}" >> .env
@@ -35,11 +32,17 @@ jobs:
           echo "GH_SYNC_TOKEN=${{ secrets.GH_SYNC_TOKEN }}" >> .env
           cp .env app/.env
 
-      - name: Generate Debug Keystore
+      - name: Generate Release Keystore
         run: |
-          keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          keytool -genkey -v -keystore app/release.keystore -storepass android -alias mykey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=TestSeries,O=TestSeries,C=IN"
+          echo "storePassword=android" > key.properties
+          echo "keyPassword=android" >> key.properties
+          echo "keyAlias=mykey" >> key.properties
+          echo "storeFile=release.keystore" >> key.properties
+          cp key.properties android/key.properties
+          cp key.properties app/key.properties
 
-      - name: Build Debug APK
+      - name: Build Release APK
         env:
           GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
@@ -47,26 +50,26 @@ jobs:
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
           GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
-        run: gradle assembleDebug
+        run: gradle assembleRelease
 
-      - name: Build Debug AAB
+      - name: Build Release AAB
         env:
-            GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-            GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
-            GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
-            GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
-            GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
-            GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
-        run: gradle bundleDebug
+          GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+          GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
+        run: gradle bundleRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: app-release-apk
+          path: app/build/outputs/apk/release/app-release.apk
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug-aab
-          path: app/build/outputs/bundle/debug/app-debug.aab
+          name: app-release-aab
+          path: app/build/outputs/bundle/release/app-release.aab
