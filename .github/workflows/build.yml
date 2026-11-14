@@ -32,15 +32,10 @@ jobs:
           echo "GH_SYNC_TOKEN=${{ secrets.GH_SYNC_TOKEN }}" >> .env
           cp .env app/.env
 
-      - name: Generate Release Keystore
+      - name: Restore Release Keystore
         run: |
-          keytool -genkey -v -keystore app/release.keystore -storepass android -alias mykey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=TestSeries,O=TestSeries,C=IN"
-          echo "storePassword=android" > key.properties
-          echo "keyPassword=android" >> key.properties
-          echo "keyAlias=mykey" >> key.properties
-          echo "storeFile=release.keystore" >> key.properties
-          cp key.properties android/key.properties
-          cp key.properties app/key.properties
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > app/release.keystore
+          ls -lh app/release.keystore
 
       - name: Build Release APK
         env:
@@ -50,7 +45,7 @@ jobs:
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
           GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
-        run: gradle assembleRelease
+        run: gradle assembleRelease -Pandroid.injected.signing.store.file=$PWD/app/release.keystore -Pandroid.injected.signing.store.password=${{ secrets.KEYSTORE_PASSWORD }} -Pandroid.injected.signing.key.alias=${{ secrets.KEY_ALIAS }} -Pandroid.injected.signing.key.password=${{ secrets.KEY_PASSWORD }}
 
       - name: Build Release AAB
         env:
@@ -60,7 +55,7 @@ jobs:
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
           GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
-        run: gradle bundleRelease
+        run: gradle bundleRelease -Pandroid.injected.signing.store.file=$PWD/app/release.keystore -Pandroid.injected.signing.store.password=${{ secrets.KEYSTORE_PASSWORD }} -Pandroid.injected.signing.key.alias=${{ secrets.KEY_ALIAS }} -Pandroid.injected.signing.key.password=${{ secrets.KEY_PASSWORD }}
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
