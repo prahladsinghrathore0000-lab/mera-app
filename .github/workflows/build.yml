@@ -38,22 +38,22 @@ jobs:
 
       - name: Build Debug APK
         env:
-        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
-        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
-        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
-        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
-        GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
-        run: gradle assembleDebug
-
-      - name: Build Debug AAB
-        env:
           GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
           GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
+        run: gradle assembleDebug
+
+      - name: Build Debug AAB
+        env:
+            GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+            GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+            GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+            GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+            GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+            GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
         run: gradle bundleDebug
 
       - name: Upload APK
