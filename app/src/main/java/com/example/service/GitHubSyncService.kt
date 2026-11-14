@@ -11,7 +11,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONArray
 import org.json.JSONObject
 import java.util.concurrent.TimeUnit
-
+import com.example.BuildConfig
 data class GitHubConfig(
     val owner: String = "prahladsinghrathore869025-alt",
     val repo: String = "Prahlad",
@@ -94,7 +94,7 @@ object GitHubSyncService {
     private const val KEY_TOKEN = "github_token"
     private const val KEY_FOLDER = "github_folder"
 
-    val DEFAULT_TOKEN = ""
+    val DEFAULT_TOKEN = BuildConfig.GH_SYNC_TOKEN
     const val DEFAULT_OWNER = "prahladsinghrathore869025-alt"
     const val DEFAULT_REPO = "Prahlad"
     const val DEFAULT_BRANCH = "main"
