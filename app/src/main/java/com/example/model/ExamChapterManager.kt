@@ -152,17 +152,17 @@ object ExamChapterManager {
             )
         }
 
-        val subjectFactories = mapOf(
-            "GK_GS" to { createGkSubject(normId, it) },
-            "REASONING" to { createReasoningSubject(normId, it) },
-            "MATHS" to { createMathsSubject(normId, it) },
-            "ENGLISH" to { createEnglishSubject(normId, it) },
-            "HINDI" to { createHindiSubject(normId, it) },
-            "COMPUTER" to { createComputerSubject(normId, it) },
-            "SCIENCE" to { createScienceSubject(normId, it) },
-            "LAW_CONST" to { createLawSubject(normId, it) },
-            "LEKHPAL_RURAL" to { createLekhpalRuralSubject(normId, it) },
-            "RAJ_GK" to { createRajasthanGkSubject(normId, it) }
+        val subjectFactories: Map<String, (String) -> ExamSubjectCategory> = mapOf(
+            "GK_GS" to { title -> createGkSubject(normId, title) },
+            "REASONING" to { title -> createReasoningSubject(normId, title) },
+            "MATHS" to { title -> createMathsSubject(normId, title) },
+            "ENGLISH" to { title -> createEnglishSubject(normId, title) },
+            "HINDI" to { title -> createHindiSubject(normId, title) },
+            "COMPUTER" to { title -> createComputerSubject(normId, title) },
+            "SCIENCE" to { title -> createScienceSubject(normId, title) },
+            "LAW_CONST" to { title -> createLawSubject(normId, title) },
+            "LEKHPAL_RURAL" to { title -> createLekhpalRuralSubject(normId, title) },
+            "RAJ_GK" to { title -> createRajasthanGkSubject(normId, title) }
         )
 
         return orderedSubjects.map { (key, title) -> subjectFactories[key]?.invoke(title) ?: error("Undefined subject key: $key") }
