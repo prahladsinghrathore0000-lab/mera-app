@@ -906,7 +906,7 @@ fun AdminEditChapterQuestionsDialog(
                                         modifier = Modifier.fillMaxWidth(),
                                         horizontalArrangement = Arrangement.spacedBy(5.dp)
                                     ) {
-                                        listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { yr ->
+                                        listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { yr ->
                                             val isSel = selectedYear == yr
                                             Surface(
                                                 onClick = { selectedYear = yr },

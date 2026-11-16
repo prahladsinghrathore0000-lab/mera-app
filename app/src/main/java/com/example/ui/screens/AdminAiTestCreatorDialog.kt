@@ -1942,7 +1942,8 @@ fun Step2SubExamSelection(
 ) {
     val examList = when (category) {
         "Railway Exams" -> listOf(
-            Pair("RRB NTPC (Graduate & Under-Graduate)", "rrb_ntpc"),
+            Pair("RRB NTPC UG", "rrb_ntpc_ug"),
+            Pair("RRB NTPC Graduate", "rrb_ntpc_grad"),
             Pair("RRB Group D", "rrb_group_d"),
             Pair("RRB ALP & Technician", "rrb_alp"),
             Pair("RPF Constable & SI", "rpf_constable")
@@ -2403,7 +2404,7 @@ fun Step4PostAndYearSelection(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(4.dp)
             ) {
-                listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { year ->
+                listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { year ->
                     Surface(
                         onClick = { yearState = year },
                         shape = RoundedCornerShape(10.dp),
@@ -2773,7 +2774,7 @@ fun Step4ChapterWiseSelection(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(4.dp)
             ) {
-                listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { year ->
+                listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { year ->
                     Surface(
                         onClick = { yearState = year },
                         shape = RoundedCornerShape(10.dp),
@@ -5444,7 +5445,7 @@ fun QuestionEditDialog(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Text("वर्ष (Year):", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = Color(0xFF475569))
-                            listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { yr ->
+                            listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { yr ->
                                 val isContained = examShiftInfoText.contains(yr)
                                 Surface(
                                     onClick = {
@@ -5452,7 +5453,7 @@ fun QuestionEditDialog(
                                             examShiftInfoText = examShiftInfoText.replace(yr, "").replace("  ", " ").trim()
                                         } else {
                                             var newText = examShiftInfoText
-                                            listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { existingYr ->
+                                            listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020").forEach { existingYr ->
                                                 newText = newText.replace(existingYr, "")
                                             }
                                             examShiftInfoText = "$newText $yr".replace("  ", " ").trim()

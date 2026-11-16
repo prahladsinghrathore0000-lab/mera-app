@@ -309,7 +309,7 @@ object RealtimeExamStatsManager {
             (normId == "ssc_delhi_police" && (clean.contains("delhi") || clean.contains("police"))) ||
             (normId == "rajasthan_police" && clean.contains("rajasthan")) ||
             (normId == "up_police" && clean.contains("up police")) ||
-            (normId == "rrb_ntpc" && clean.contains("ntpc")) ||
+            ((normId == "rrb_ntpc" || normId == "rrb_ntpc_ug" || normId == "rrb_ntpc_grad") && clean.contains("ntpc")) ||
             (normId == "ssc_cgl" && clean.contains("cgl"))
         }
         return if (hasAttempt) 1L else 0L

@@ -17,7 +17,7 @@ data class TestPaper(
     val questions: List<QuizQuestion> = emptyList()
 )
 
-val availableExamYears = listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020")
+val availableExamYears = listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020")
 
 fun getDelhiPoliceConstableTestsForYear(year: String): List<TestPaper> {
     val allBuiltIn = DefaultFullMockTests.getDelhiPoliceFullTests().map { it.testPaper }

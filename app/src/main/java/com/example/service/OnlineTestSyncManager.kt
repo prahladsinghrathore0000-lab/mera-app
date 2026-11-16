@@ -461,6 +461,8 @@ object OnlineTestSyncManager {
             p.contains("up_police") || p.contains("uppolice") || p.contains("uttar_pradesh") -> "up_police"
             p.contains("rajasthan_police") || p.contains("rajpolice") || p.contains("rajasthan") -> "rajasthan_police"
             p.contains("rpf") -> "rpf_si"
+            p.contains("ntpc") && (p.contains("graduate") || p.contains("grad") || p.contains("graduation")) -> "rrb_ntpc_grad"
+            p.contains("ntpc") && (p.contains("ug") || p.contains("undergraduate") || p.contains("under_graduate")) -> "rrb_ntpc_ug"
             p.contains("ntpc") -> "rrb_ntpc"
             p.contains("group_d") || p.contains("groupd") || p.contains("rrc") -> "rrb_group_d"
             p.contains("alp") || p.contains("technician") -> "rrb_alp"

@@ -58,99 +58,114 @@ object ExamChapterManager {
     fun getSubjectsForExam(subExamId: String): List<ExamSubjectCategory> {
         val normId = DynamicTestRepository.normalizeSubExamId(subExamId)
 
-        return when (normId) {
+        val orderedSubjects = when (normId) {
             // 1. Delhi Police Constable / Head Constable
             "ssc_delhi_police" -> listOf(
-                createGkSubject(normId, "सामान्य ज्ञान व करंट अफेयर्स (GK / GS)"),
-                createReasoningSubject(normId, "तर्कशक्ति (Reasoning)"),
-                createMathsSubject(normId, "संख्यात्मक योग्यता (Mathematics)"),
-                createComputerSubject(normId, "कंप्यूटर ज्ञान (Computer Knowledge)")
+                "GK_GS" to "सामान्य ज्ञान व करंट अफेयर्स (GK / GS)",
+                "REASONING" to "तर्कशक्ति (Reasoning)",
+                "MATHS" to "संख्यात्मक योग्यता (Mathematics)",
+                "COMPUTER" to "कंप्यूटर ज्ञान (Computer Knowledge)"
             )
 
             // 2. SSC CGL / CHSL / CPO / MTS
             "ssc_cgl", "ssc_chsl", "ssc_cpo" -> listOf(
-                createReasoningSubject(normId, "तर्कशक्ति (General Intelligence & Reasoning)"),
-                createMathsSubject(normId, "गणित (Quantitative Aptitude)"),
-                createGkSubject(normId, "सामान्य ज्ञान (General Awareness)"),
-                createEnglishSubject(normId, "General English (अंग्रेज़ी भाषा)")
+                "GK_GS" to "सामान्य ज्ञान (General Awareness)",
+                "REASONING" to "तर्कशक्ति (General Intelligence & Reasoning)",
+                "MATHS" to "गणित (Quantitative Aptitude)",
+                "ENGLISH" to "General English (अंग्रेज़ी भाषा)"
             )
 
             "ssc_mts" -> listOf(
-                createMathsSubject(normId, "संख्यात्मक एवं गणितीय क्षमता (Numerical Math)"),
-                createReasoningSubject(normId, "तर्कशक्ति क्षमता (Reasoning Ability)"),
-                createGkSubject(normId, "सामान्य जागरूकता (General Awareness)"),
-                createEnglishSubject(normId, "English Language & Comprehension")
+                "GK_GS" to "सामान्य जागरूकता (General Awareness)",
+                "REASONING" to "तर्कशक्ति क्षमता (Reasoning Ability)",
+                "MATHS" to "संख्यात्मक एवं गणितीय क्षमता (Numerical Math)",
+                "ENGLISH" to "English Language & Comprehension"
             )
 
             // 3. SSC GD Constable
             "ssc_gd" -> listOf(
-                createReasoningSubject(normId, "सामान्य बुद्धिमत्ता एवं तर्कशक्ति"),
-                createGkSubject(normId, "सामान्य ज्ञान एवं सामान्य जानकारी"),
-                createMathsSubject(normId, "प्रारंभिक गणित (Elementary Mathematics)"),
-                createHindiSubject(normId, "सामान्य हिंदी (General Hindi)"),
-                createEnglishSubject(normId, "General English")
+                "REASONING" to "सामान्य बुद्धिमत्ता एवं तर्कशक्ति",
+                "GK_GS" to "सामान्य ज्ञान एवं सामान्य जानकारी",
+                "MATHS" to "प्रारंभिक गणित (Elementary Mathematics)",
+                "HINDI" to "सामान्य हिंदी (General Hindi)",
+                "ENGLISH" to "General English"
             )
 
             // 4. Railway RRB NTPC / RPF
-            "rrb_ntpc", "rpf_si" -> listOf(
-                createGkSubject(normId, "सामान्य जागरूकता (General Awareness)"),
-                createMathsSubject(normId, "गणित (Mathematics)"),
-                createReasoningSubject(normId, "सामान्य बुद्धिमत्ता एवं तर्कशक्ति (Reasoning)")
+            "rrb_ntpc", "rrb_ntpc_ug", "rrb_ntpc_grad", "rpf_si" -> listOf(
+                "GK_GS" to "सामान्य जागरूकता (General Awareness)",
+                "MATHS" to "गणित (Mathematics)",
+                "REASONING" to "सामान्य बुद्धिमत्ता एवं तर्कशक्ति (Reasoning)"
             )
 
             // 5. Railway RRB Group D / ALP / Tech / JE
             "rrb_group_d", "rrb_alp", "rrb_je" -> listOf(
-                createScienceSubject(normId, "सामान्य विज्ञान (General Science)"),
-                createMathsSubject(normId, "गणित (Mathematics)"),
-                createReasoningSubject(normId, "सामान्य बुद्धिमत्ता एवं तर्कशक्ति (Reasoning)"),
-                createGkSubject(normId, "सामान्य जागरूकता एवं करंट अफेयर्स")
+                "SCIENCE" to "सामान्य विज्ञान (General Science)",
+                "MATHS" to "गणित (Mathematics)",
+                "REASONING" to "सामान्य बुद्धिमत्ता एवं तर्कशक्ति (Reasoning)",
+                "GK_GS" to "सामान्य जागरूकता एवं करंट अफेयर्स"
             )
 
             // 6. UP Police Constable / SI
             "up_police" -> listOf(
-                createGkSubject(normId, "सामान्य ज्ञान (General Knowledge)"),
-                createHindiSubject(normId, "सामान्य हिंदी (General Hindi)"),
-                createMathsSubject(normId, "संख्यात्मक एवं मानसिक योग्यता (Maths)"),
-                createReasoningSubject(normId, "मानसिक अभिरुचि, बुद्धिलब्धि एवं तार्किक क्षमता"),
-                createLawSubject(normId, "मूलविधि, संविधान एवं पुलिस प्रणाली")
+                "GK_GS" to "सामान्य ज्ञान (General Knowledge)",
+                "HINDI" to "सामान्य हिंदी (General Hindi)",
+                "MATHS" to "संख्यात्मक एवं मानसिक योग्यता (Maths)",
+                "REASONING" to "मानसिक अभिरुचि, बुद्धिलब्धि एवं तार्किक क्षमता",
+                "LAW_CONST" to "मूलविधि, संविधान एवं पुलिस प्रणाली"
             )
 
             // 7. UP Lekhpal
             "lekhpal" -> listOf(
-                createHindiSubject(normId, "सामान्य हिंदी (General Hindi)"),
-                createMathsSubject(normId, "गणित (Mathematics)"),
-                createGkSubject(normId, "सामान्य ज्ञान (General Knowledge)"),
-                createLekhpalRuralSubject(normId, "ग्राम्य समाज एवं विकास (Rural Development)")
+                "HINDI" to "सामान्य हिंदी (General Hindi)",
+                "MATHS" to "गणित (Mathematics)",
+                "GK_GS" to "सामान्य ज्ञान (General Knowledge)",
+                "LEKHPAL_RURAL" to "ग्राम्य समाज एवं विकास (Rural Development)"
             )
 
             // 8. Rajasthan Police Constable
             "rajasthan_police" -> listOf(
-                createRajasthanGkSubject(normId, "राजस्थान का इतिहास, कला, संस्कृति एवं भूगोल"),
-                createReasoningSubject(normId, "विवेचना एवं तार्किक योग्यता"),
-                createComputerSubject(normId, "कंप्यूटर का सामान्य ज्ञान"),
-                createGkSubject(normId, "सामान्य ज्ञान, विज्ञान एवं समसामयिकी")
+                "REASONING" to "विवेचना एवं तार्किक योग्यता",
+                "COMPUTER" to "कंप्यूटर का सामान्य ज्ञान",
+                "GK_GS" to "सामान्य ज्ञान, विज्ञान एवं समसामयिकी",
+                "RAJ_GK" to "राजस्थान का इतिहास, कला, संस्कृति एवं भूगोल"
             )
 
             // 9. Patwari & Rajasthan CET
             "patwari", "rajasthan_cet" -> listOf(
-                createRajasthanGkSubject(normId, "राजस्थान का सामान्य ज्ञान (Rajasthan GK)"),
-                createGkSubject(normId, "भारत का संविधान, इतिहास एवं भूगोल"),
-                createScienceSubject(normId, "दैनिक विज्ञान (General Science)"),
-                createMathsSubject(normId, "गणित (Mathematics)"),
-                createReasoningSubject(normId, "तार्किक योग्यता (Reasoning)"),
-                createHindiSubject(normId, "सामान्य हिंदी"),
-                createEnglishSubject(normId, "General English"),
-                createComputerSubject(normId, "कंप्यूटर ज्ञान (Computer Basics)")
+                "RAJ_GK" to "राजस्थान का सामान्य ज्ञान (Rajasthan GK)",
+                "GK_GS" to "भारत का संविधान, इतिहास एवं भूगोल",
+                "SCIENCE" to "दैनिक विज्ञान (General Science)",
+                "MATHS" to "गणित (Mathematics)",
+                "REASONING" to "तार्किक योग्यता (Reasoning)",
+                "HINDI" to "सामान्य हिंदी",
+                "ENGLISH" to "General English",
+                "COMPUTER" to "कंप्यूटर ज्ञान (Computer Basics)"
             )
 
             // Default fallback: 4 Core Subjects
             else -> listOf(
-                createMathsSubject(normId, "गणित (Mathematics)"),
-                createReasoningSubject(normId, "तर्कशक्ति (Reasoning)"),
-                createGkSubject(normId, "सामान्य ज्ञान व विज्ञान (GK / GS)"),
-                createHindiSubject(normId, "सामान्य हिंदी (General Hindi)")
+                "MATHS" to "गणित (Mathematics)",
+                "REASONING" to "तर्कशक्ति (Reasoning)",
+                "GK_GS" to "सामान्य ज्ञान व विज्ञान (GK / GS)",
+                "HINDI" to "सामान्य हिंदी (General Hindi)"
             )
         }
+
+        val subjectFactories = mapOf(
+            "GK_GS" to { createGkSubject(normId, it) },
+            "REASONING" to { createReasoningSubject(normId, it) },
+            "MATHS" to { createMathsSubject(normId, it) },
+            "ENGLISH" to { createEnglishSubject(normId, it) },
+            "HINDI" to { createHindiSubject(normId, it) },
+            "COMPUTER" to { createComputerSubject(normId, it) },
+            "SCIENCE" to { createScienceSubject(normId, it) },
+            "LAW_CONST" to { createLawSubject(normId, it) },
+            "LEKHPAL_RURAL" to { createLekhpalRuralSubject(normId, it) },
+            "RAJ_GK" to { createRajasthanGkSubject(normId, it) }
+        )
+
+        return orderedSubjects.map { (key, title) -> subjectFactories[key]?.invoke(title) ?: error("Undefined subject key: $key") }
     }
 
     /**

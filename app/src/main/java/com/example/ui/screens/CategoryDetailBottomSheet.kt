@@ -143,7 +143,7 @@ enum class PolicePostType {
 
 fun isTierExam(subExamId: String): Boolean {
     val id = subExamId.lowercase().trim()
-    return id in setOf("ssc_cgl", "ssc_chsl", "ssc_cpo", "rrb_ntpc", "rrb_alp", "rrb_je")
+    return id in setOf("ssc_cgl", "ssc_chsl", "ssc_cpo", "rrb_ntpc", "rrb_ntpc_ug", "rrb_ntpc_grad", "rrb_alp", "rrb_je")
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -1839,7 +1839,7 @@ fun ChapterWiseSelectionScreen(
             // Available Years for Subject-wise filter (directly 2025, 2024, 2023, 2022, 2021, 2020)
             val availableYearsForSubject = remember(subjectWisePyqTests) {
                 val foundYears = subjectWisePyqTests.map { it.year }.filter { it.isNotBlank() && it != "सभी" }
-                (listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020") + foundYears).distinct()
+                (listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020") + foundYears).distinct()
             }
 
             val filteredSubjectTests = remember(subjectWisePyqTests, searchQuery, selectedSubjectYear) {
@@ -2040,7 +2040,7 @@ fun ChapterWiseSelectionScreen(
             val availableYearsForChapter = remember(dynamicChapterTests, activeChapters) {
                 val foundYears1 = dynamicChapterTests.map { it.testPaper.year }.filter { it.isNotBlank() && it != "सभी" }
                 val foundYears2 = activeChapters.map { if (it.year.isNotBlank() && it.year != "सभी") it.year else CustomChapterRepository.extractYear(it.title, it.description) }.filter { it.isNotBlank() && it != "सभी" }
-                (listOf("सभी", "2026", "2025", "2024", "2023", "2022", "2021", "2020") + foundYears1 + foundYears2).distinct()
+                (listOf("सभी", "2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020") + foundYears1 + foundYears2).distinct()
             }
 
             val filteredChapters = remember(activeChapters, searchQuery, selectedChapterYear) {

@@ -26,7 +26,7 @@ object DynamicTestRepository {
 
     // Precompiled Static Regex Patterns (eliminates GC pauses & CPU spikes)
     private val SET_ID_REGEX = Regex(""".*_s\d+.*""")
-    private val FOREIGN_EXAM_PREFIX_REGEX = Regex("""^(?:dyn_)?(?:ssc_gd|ssc_delhi_police|up_police|rajasthan_police|rpf_si|rrb_ntpc|rrb_group_d|rrb_alp|rrb_je|ssc_cgl|ssc_chsl|ssc_cpo|ssc_mts|patwari|lekhpal|rajasthan_cet)_""")
+    private val FOREIGN_EXAM_PREFIX_REGEX = Regex("""^(?:dyn_)?(?:ssc_gd|ssc_delhi_police|up_police|rajasthan_police|rpf_si|rrb_ntpc_ug|rrb_ntpc_grad|rrb_ntpc|rrb_group_d|rrb_alp|rrb_je|ssc_cgl|ssc_chsl|ssc_cpo|ssc_mts|patwari|lekhpal|rajasthan_cet)_""")
     private val WHITESPACE_REGEX = Regex("""\s+""")
 
     /**
@@ -346,8 +346,14 @@ object DynamicTestRepository {
             return "rpf_si"
         }
 
-        // 5. RRB NTPC
+        // 5. RRB NTPC (UG / Graduate split)
         if (t.contains("ntpc") || rawT.contains("ntpc") || rawT.contains("एनटीपीसी") || shiftLower.contains("ntpc") || idLower.contains("ntpc")) {
+            if (t.contains("grad") || rawT.contains("graduate") || rawT.contains("graduation") || rawT.contains("ग्रेजुएट") || shiftLower.contains("graduate") || idLower.contains("grad")) {
+                return "rrb_ntpc_grad"
+            }
+            if (t.contains("ug") || rawT.contains("undergraduate") || rawT.contains("under-graduate") || rawT.contains("under graduate") || rawT.contains("उंडरग्रेजुएट") || rawT.contains("अंडरग्रेजुएट") || shiftLower.contains("ug") || idLower.contains("ug")) {
+                return "rrb_ntpc_ug"
+            }
             return "rrb_ntpc"
         }
 
@@ -429,7 +435,7 @@ object DynamicTestRepository {
         if (currentExam != "up_police" && (t.contains("up_police") || t.contains("uppolice") || rawT.contains("up police") || rawT.contains("यूपी पुलिस") || rawT.contains("उत्तर प्रदेश पुलिस") || idLower.contains("up_police"))) return true
         if (currentExam != "rajasthan_police" && (t.contains("rajasthan_police") || t.contains("rajpolice") || rawT.contains("rajasthan police") || rawT.contains("राजस्थान पुलिस") || rawT.contains("राज पुलिस") || idLower.contains("rajasthan_police"))) return true
         if (currentExam != "rpf_si" && (t.contains("rpf") || rawT.contains("rpf si") || rawT.contains("आरपीएफ") || rawT.contains("railway police") || idLower.contains("rpf"))) return true
-        if (currentExam != "rrb_ntpc" && (t.contains("ntpc") || rawT.contains("ntpc") || rawT.contains("एनटीपीसी") || idLower.contains("ntpc"))) return true
+        if ((currentExam != "rrb_ntpc" && currentExam != "rrb_ntpc_ug" && currentExam != "rrb_ntpc_grad") && (t.contains("ntpc") || rawT.contains("ntpc") || rawT.contains("एनटीपीसी") || idLower.contains("ntpc"))) return true
         if (currentExam != "rrb_group_d" && (t.contains("group_d") || t.contains("groupd") || rawT.contains("group d") || rawT.contains("ग्रुप d") || idLower.contains("group_d"))) return true
         if (currentExam != "rrb_alp" && (t.contains("alp") || rawT.contains("technician") || rawT.contains("एएलपी") || rawT.contains("लोको पायलट") || idLower.contains("alp"))) return true
         if (currentExam != "rrb_je" && (t.contains("rrb_je") || t.contains("rrb je") || rawT.contains("junior engineer") || idLower.contains("rrb_je"))) return true
@@ -754,6 +760,8 @@ object DynamicTestRepository {
             clean.contains("chsl") || clean.contains("सीएचएसएल") || clean.contains("10+2") -> "ssc_chsl"
             clean.contains("cpo") || clean.contains("सीपीओ") -> "ssc_cpo"
             clean.contains("mts") || clean.contains("एमटीएस") || clean.contains("havaldar") || clean.contains("हवलदार") -> "ssc_mts"
+            clean.contains("ntpc") && (clean.contains("grad") || clean.contains("graduate") || clean.contains("graduation") || clean.contains("ग्रेजुएट")) -> "rrb_ntpc_grad"
+            clean.contains("ntpc") && (clean.contains("ug") || clean.contains("undergraduate") || clean.contains("under_graduate") || clean.contains("undergraduate") || clean.contains("अंडरग्रेजुएट") || clean.contains("उंडरग्रेजुएट")) -> "rrb_ntpc_ug"
             clean.contains("ntpc") || clean.contains("एनटीपीसी") -> "rrb_ntpc"
             clean.contains("group_d") || clean.contains("groupd") || clean.contains("ग्रुप_d") || clean.contains("rrc") -> "rrb_group_d"
             clean.contains("alp") || clean.contains("technician") || clean.contains("एएलपी") || clean.contains("loco") -> "rrb_alp"
@@ -1290,7 +1298,11 @@ object DynamicTestRepository {
         if (t.contains("chsl") || rawT.contains("chsl")) return "ssc_chsl"
         if (t.contains("cpo") || rawT.contains("cpo")) return "ssc_cpo"
         if (t.contains("mts") || rawT.contains("हवलदार") || rawT.contains("havaldar")) return "ssc_mts"
-        if (t.contains("ntpc") || rawT.contains("ntpc")) return "rrb_ntpc"
+        if (t.contains("ntpc") || rawT.contains("ntpc")) {
+            if (t.contains("grad") || rawT.contains("graduate") || rawT.contains("graduation") || rawT.contains("ग्रेजुएट")) return "rrb_ntpc_grad"
+            if (t.contains("ug") || rawT.contains("undergraduate") || rawT.contains("under-graduate") || rawT.contains("under graduate") || rawT.contains("अंडरग्रेजुएट") || rawT.contains("उंडरग्रेजुएट")) return "rrb_ntpc_ug"
+            return "rrb_ntpc"
+        }
         if (t.contains("group_d") || t.contains("groupd") || rawT.contains("group d") || rawT.contains("ग्रुप d")) return "rrb_group_d"
         if (t.contains("alp") || rawT.contains("technician") || rawT.contains("एएलपी")) return "rrb_alp"
         if (t.contains("je") || rawT.contains("junior engineer")) return "rrb_je"

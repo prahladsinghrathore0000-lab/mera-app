@@ -162,7 +162,7 @@ object CustomChapterRepository {
     fun extractYear(title: String?, description: String? = null, fallbackYear: String = ""): String {
         if (fallbackYear.isNotBlank() && fallbackYear != "सभी") return fallbackYear
         val text = "${title ?: ""} ${description ?: ""}"
-        val years = listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017")
+        val years = listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017")
         return years.find { text.contains(it) } ?: "2025"
     }
 
@@ -683,7 +683,7 @@ object CustomChapterRepository {
                         val desc = pObj.optString("description", obj.optString("description", ""))
                         val rawYear = pObj.optString("year", obj.optString("year", ""))
                         val resolvedYear = if (rawYear.isNotBlank() && rawYear != "null") rawYear else {
-                            listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020").find { desc.contains(it) || title.contains(it) } ?: "2026"
+                            listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020").find { desc.contains(it) || title.contains(it) } ?: "2027"
                         }
                         val engTitle = pObj.optString("englishTitle", obj.optString("englishTitle", "")).takeIf { it != "null" } ?: ""
 
@@ -1954,7 +1954,7 @@ object CustomChapterRepository {
         val dynamicFullPapers = (dynamicFullEntries.map { it.testPaper } + dynamicCustomList).distinctBy { it.id }
 
         // 2. Fetch static full tests for this exam
-        val targetYears = listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020")
+        val targetYears = listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020")
         val staticFullPapers = when (normId) {
             "ssc_delhi_police" -> {
                 targetYears.flatMap { y ->
@@ -2201,7 +2201,7 @@ object CustomChapterRepository {
                             val desc = obj.optString("description", "")
                             val rawYear = obj.optString("year", "")
                             val resolvedYear = if (rawYear.isNotBlank() && rawYear != "null") rawYear else {
-                                listOf("2026", "2025", "2024", "2023", "2022", "2021", "2020").find { desc.contains(it) || obj.optString("title", "").contains(it) } ?: "2026"
+                                listOf("2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020").find { desc.contains(it) || obj.optString("title", "").contains(it) } ?: "2027"
                             }
                             val engTitle = obj.optString("englishTitle", "").takeIf { it != "null" } ?: ""
 

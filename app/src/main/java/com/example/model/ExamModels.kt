@@ -51,7 +51,8 @@ val examCategories = listOf(
         gradientColors = listOf(CardRedStart, CardRedEnd),
         description = "Indian Railways RRB & RRC recruitment examinations",
         subExams = listOf(
-            SubExam("rrb_ntpc", "RRB NTPC", "Non-Technical Popular Categories (Graduate & Undergrad)", "12th / Degree"),
+            SubExam("rrb_ntpc_ug", "RRB NTPC UG", "Non-Technical Popular Categories (Undergraduate)", "12th Pass"),
+            SubExam("rrb_ntpc_grad", "RRB NTPC Graduate", "Non-Technical Popular Categories (Graduate)", "Graduation Degree"),
             SubExam("rrb_alp", "RRB ALP & Tech", "Assistant Loco Pilot & Technicians", "ITI / Diploma / B.Tech"),
             SubExam("rrb_group_d", "RRB Group D", "Track Maintainer, Assistant Pointsman & Posts", "10th / ITI"),
             SubExam("rrb_je", "RRB JE", "Junior Engineer (Civil, Mech, Electrical, Electronics)", "Diploma / B.Tech"),
