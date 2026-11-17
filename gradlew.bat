@@ -30,13 +30,18 @@ set DIRNAME=%~dp0
 if "%DIRNAME%"=="" set DIRNAME=.
 @rem This is normally unused
 set APP_BASE_NAME=%~n0
-set APP_HOME=%DIRNAME%..
+set APP_HOME=%DIRNAME%
+
+@if not exist "%APP_HOME%lib\gradle-gradle-cli-main-9.3.1.jar" (
+  if exist "%APP_HOME%gradle-9.3.1\lib\gradle-gradle-cli-main-9.3.1.jar" set APP_HOME=%APP_HOME%gradle-9.3.1\
+  if exist "%APP_HOME%gradle\lib\gradle-gradle-cli-main-9.3.1.jar" set APP_HOME=%APP_HOME%gradle\
+)
 
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
-set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m" "-javaagent:%APP_HOME%/lib/agents/gradle-instrumentation-agent-9.3.1.jar"
+set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m" "-javaagent:%APP_HOME%\lib\agents\gradle-instrumentation-agent-9.3.1.jar"
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
